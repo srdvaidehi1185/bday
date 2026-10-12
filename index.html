@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f6" />
+  <title>For Babe, With All My Heart 🎀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div id="confetti-layer" aria-hidden="true"></div>
+  <main class="site-shell">
+    <header class="topline"><span class="tiny-heart">♥</span><span>MADE WITH TOO MUCH LOVE</span><span class="tiny-heart">♥</span></header>
+
+    <section class="screen active" id="welcome-screen">
+      <div class="hero-bow" aria-hidden="true">🎀</div>
+      <p class="eyebrow">pssst, Babe… this is for you</p>
+      <h1>I made<br><em>a little piece of my heart</em></h1>
+      <p class="intro">From school days to all the days still waiting for us — here's a tiny surprise for my forever person. Ready? 💗</p>
+      <button class="primary-btn" id="open-gift">Open your surprise <span>♡</span></button>
+      <div class="floating-note note-left">since school<br>forever us</div>
+      <div class="floating-note note-right">my person<br>always ♡</div>
+      <div class="scroll-hint">YOUR LITTLE UNIVERSE IS WAITING ↓</div>
+    </section>
+
+    <section class="screen" id="memories-screen">
+      <p class="eyebrow">chapter one · from school days to today</p>
+      <h2>We grew up…<br><em>and made a million memories.</em></h2>
+      <p class="section-copy">Every picture holds a little piece of our story. Tap each one for a note. Add your real photos in the <code>photos</code> folder to make this part completely ours. 📸</p>
+      <div class="polaroid-grid">
+        <button class="polaroid tilt-left" data-note="Look at us. We had no idea how many memories, laughs, and life changes were waiting for us. I'm so glad we got to grow up together. 🎀">
+          <span class="photo-frame"><img src="photos/photo1.jpg" alt="A favorite school-days memory" onerror="this.style.display='none';this.parentElement.classList.add('photo-placeholder')"><span class="placeholder-text">our school<br>days 🎒</span></span>
+          <span class="photo-caption">where it all began</span>
+        </button>
+        <button class="polaroid tilt-right" data-note="The best memories are usually the silly, random ones that nobody else would understand. That's our kind of magic. 😂💗">
+          <span class="photo-frame"><img src="photos/photo2.jpg" alt="A funny memory together" onerror="this.style.display='none';this.parentElement.classList.add('photo-placeholder')"><span class="placeholder-text">our silly<br>little world ✨</span></span>
+          <span class="photo-caption">just being us</span>
+        </button>
+        <button class="polaroid tilt-right" data-note="Different days, different versions of us, but still my Babe. Here's to every memory we've made and every one still to come. 🌷">
+          <span class="photo-frame"><img src="photos/photo3.jpg" alt="A recent memory together" onerror="this.style.display='none';this.parentElement.classList.add('photo-placeholder')"><span class="placeholder-text">more memories<br>to come 🌷</span></span>
+          <span class="photo-caption">to be continued…</span>
+        </button>
+      </div>
+      <div class="button-row"><button class="secondary-btn" id="back-welcome">← Back</button><button class="primary-btn" id="to-letter">There's more <span>♡</span></button></div>
+    </section>
+
+    <section class="screen" id="letter-screen">
+      <p class="eyebrow">chapter two · something from my heart</p>
+      <h2>For my Babe,<br><em>my forever bestie.</em></h2>
+      <div class="envelope-wrap">
+        <button class="envelope" id="envelope" aria-label="Open your birthday letter"><span class="envelope-heart">♥</span><span class="envelope-label">tap to open</span></button>
+      </div>
+      <article class="letter hidden" id="letter">
+        <p>Happy birthday, Gayuuuu!! 💗</p>
+        <p>Sometimes I think about how lucky I am that school brought us into each other's lives. Back then, we had no idea how many memories we'd make, how much we'd grow, or how important we'd become to each other. And now, I honestly can't imagine my story without you in it.</p>
+        <p>You've been part of so many versions of me — the old me, the growing-up me, and the person I'm still becoming. And one of my favorite things is knowing that somewhere in all those chapters, there's always a little piece of us.</p>
+        <p>Thank you for the laughs that make my stomach hurt, the conversations that turn into hours, the silly moments that become core memories, and the comfort of simply having you in my life. You make ordinary days feel special just by being you.</p>
+        <p>For your birthday, I wish you the kind of happiness that feels peaceful, the kind of love that feels safe, opportunities that make you proud, and a thousand little reasons to smile. I hope this year is gentle with your heart and gives you more than you've been wishing for.</p>
+        <p>Life will keep changing, and we'll keep growing, but I hope we never stop finding our way back to each other. Whatever comes next, I'll always be cheering for you, celebrating you, and grateful that I get to call you my best friend.</p>
+        <p><strong>If I could go back to those school days and choose my person all over again, I'd still choose you. Every single time.</strong></p>
+        <p class="letter-signoff">Happy birthday, my Babe.<br><em>Lysm today and always. ♡</em></p>
+        <p class="edit-tip">Make this even more yours by adding a specific school memory or inside joke here. 💌</p>
+      </article>
+      <div class="button-row"><button class="secondary-btn" id="back-memories">← Back</button><button class="primary-btn" id="to-wishes">One last thing <span>✧</span></button></div>
+    </section>
+
+    <section class="screen" id="wishes-screen">
+      <p class="eyebrow">chapter three · a wish just for you</p>
+      <div class="cake" aria-label="Birthday cake">🎂</div>
+      <h2>Make a wish,<br><em>Baby.</em></h2>
+      <p class="intro">Close your eyes for a second. Wish for something your heart really wants. I hope this next chapter brings it closer to you. 💫</p>
+      <button class="candle-btn" id="blow-candle">✨ Blow out your candle ✨</button>
+      <p id="wish-message" class="wish-message" aria-live="polite">Whatever you wished for, I hope life surprises you beautifully. ♡</p>
+      <button class="primary-btn hidden" id="final-surprise">One final message for you 💌</button>
+      <div class="button-row centered"><button class="secondary-btn" id="back-letter">← Back</button></div>
+    </section>
+
+    <section class="screen" id="final-screen">
+      <div class="final-sparkle">💖</div>
+      <p class="eyebrow">one last thing baby </p>
+      <h2>In every lifetime,<br><em>I'd still choose you.</em></h2>
+      <div class="final-card">
+        <p class="big-quote">“We may grow up, grow older, and find ourselves in a thousand different places — but you'll always have a home in my heart.”</p>
+        <p >Happy birthday Gayuuuuu!!!, my favorite human, and my forever person.</p>
+        <p class="signature">You and me. Then, now, always. ♡</p>
+      </div>
+      <button class="primary-btn" id="replay">Let's relive it again ↻</button>
+      <p class="tiny-footer">made for you my bestieee, with all my heart · 🎀</p>
+    </section>
+
+    <footer class="site-footer"><span>♡</span> a little website, a lifetime of friendship <span>♡</span></footer>
+  </main>
+
+  <div class="modal hidden" id="memory-modal" role="dialog" aria-modal="true" aria-labelledby="memory-modal-title">
+    <div class="modal-card"><button class="modal-close" id="close-modal" aria-label="Close">×</button><div class="modal-flower">🌸</div><h3 id="memory-modal-title">A little memory</h3><p id="memory-note"></p><button class="primary-btn" id="modal-ok">I love us ♡</button></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
